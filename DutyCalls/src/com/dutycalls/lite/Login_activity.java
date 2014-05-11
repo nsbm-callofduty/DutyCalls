@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
-
+//Shahiq
 public class Login_activity extends Activity {
 
 	Button btn_login;
