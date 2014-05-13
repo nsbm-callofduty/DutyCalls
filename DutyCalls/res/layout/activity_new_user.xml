@@ -3,16 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <EditText
-        android:id="@+id/newuser_password_edittext"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/newuser_password_viewtext"
-        android:ems="10"
-        android:inputType="textPassword" />
-
     <Button
         android:id="@+id/newuser_save_button"
         android:layout_width="fill_parent"
@@ -28,6 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
         android:paddingLeft="50dp"
         android:text="@string/fname"
         android:textAppearance="?android:attr/textAppearanceMedium" />
@@ -41,12 +32,23 @@
         android:ems="10"
         android:inputType="text" />
 
+    <TextView
+        android:id="@+id/newuser_lastname_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/newuser_username_viewtext"
+        android:layout_below="@+id/newuser_firstname_edittext"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="50dp"
+        android:text="@string/lname"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
     <EditText
         android:id="@+id/newuser_lastname_edittext"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/newuser_firstname_edittext"
+        android:layout_below="@+id/newuser_lastname_textview"
         android:ems="10"
         android:inputType="text" />
 
@@ -56,18 +58,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/newuser_lastname_edittext"
+        android:layout_marginTop="20dp"
         android:paddingLeft="50dp"
         android:text="@string/email"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/newuser_lastname_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/newuser_email_textview"
-        android:paddingLeft="50dp"
-        android:text="@string/lname"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
@@ -75,7 +68,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/newuser_lastname_textview"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/newuser_email_textview"
         android:ems="10"
         android:inputType="textEmailAddress" />
 
@@ -85,6 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/newuser_email_edittext"
+        android:layout_marginTop="20dp"
         android:paddingLeft="50dp"
         android:text="@string/usename"
         android:textAppearance="?android:attr/textAppearanceMedium" />
@@ -94,18 +89,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:inputType="text"
+        android:layout_alignParentRight="true"
         android:layout_below="@+id/newuser_username_viewtext"
-        android:ems="10" />
+        android:ems="10"
+        android:inputType="text" />
 
     <TextView
         android:id="@+id/newuser_password_viewtext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/newuser_lastname_textview"
         android:layout_below="@+id/newuser_username_edittext"
+        android:layout_marginTop="20dp"
         android:paddingLeft="50dp"
         android:text="@string/pswrd"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/newuser_password_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/newuser_password_viewtext"
+        android:ems="10"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
 
 </RelativeLayout>
