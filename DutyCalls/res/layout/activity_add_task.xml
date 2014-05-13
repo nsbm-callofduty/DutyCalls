@@ -58,20 +58,21 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/addtask_duedateselected_textview"
-        android:layout_marginTop="32dp"
+        android:layout_below="@+id/outputdate"
+        android:layout_marginTop="24dp"
         android:paddingLeft="50dp"
         android:text="@string/description"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
-        android:id="@+id/addtask_duedate_textview_button"
+        android:id="@+id/changeDate"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/addtask_duedateselected_textview"
-        android:layout_alignBottom="@+id/addtask_duedateselected_textview"
-        android:layout_toRightOf="@+id/addtask_duedateselected_textview"
+        android:layout_alignBaseline="@+id/outputdate"
+        android:layout_alignBottom="@+id/outputdate"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="42dp"
         android:minHeight="40dp"
         android:minWidth="60dp"
         android:text="@string/date" />
@@ -91,19 +92,21 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/login_password_edittext"
+        android:layout_marginTop="24dp"
         android:paddingLeft="50dp"
-        android:layout_marginTop="22dp"
         android:text="@string/dutedate"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/addtask_duedateselected_textview"
+        android:id="@+id/outputdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/newuser_email_textview"
         android:layout_alignBottom="@+id/newuser_email_textview"
-        android:layout_toRightOf="@+id/newuser_email_textview"
-        android:text="@string/selectDate"
+        android:layout_toRightOf="@+id/newuser_email_textview" >
+ 		<!-- android:text="@string/selectDate" -->
+        android:text=""
         android:textAppearance="?android:attr/textAppearanceMedium" />
+    </TextView>
 
 </RelativeLayout>

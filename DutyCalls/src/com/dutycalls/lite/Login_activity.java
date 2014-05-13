@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
-//Shahiq
+//Shahiq A
 public class Login_activity extends Activity {
 
 	Button btn_login;
@@ -30,7 +30,8 @@ public class Login_activity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				startActivity(new Intent(Login_activity.this,New_User_activity.class));
+				//startActivity(new Intent(Login_activity.this,New_User_activity.class));
+				startActivity(new Intent(Login_activity.this,AddTask_activity.class));
 				
 			}
 		});
